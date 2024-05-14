@@ -1,0 +1,26 @@
+@rootURL = http://localhost:8000
+
+@apiEP = {{rootURL}}/api/v1
+
+@userAPI = {{apiEP}}/users
+### Check the server status
+GET {{rootURL}}
+
+###==== user api
+###Get User
+GET {{userAPI}}
+
+
+###
+POST {{{{userAPI}}}}
+Content-Type: application/json
+
+{
+    "fName":"prem",
+    "lName":"123",
+    "phone":"12345",
+
+
+    "email":"{asdf@gmail.com",
+    "password":""
+}
